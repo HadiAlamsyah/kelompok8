@@ -8,7 +8,7 @@ import 'package:pertemuan_v/modules/home_screen/fragments/news_fragment/news_fra
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({
-    super.key,
+    super.key, required User user,
     // required this.user,
   });
   // final User user;
