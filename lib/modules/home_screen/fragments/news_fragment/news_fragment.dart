@@ -5,9 +5,29 @@ class NewsFragment extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text("News Fragment"),
+    return Container(
+      margin: const EdgeInsets.all(10),
+      decoration: BoxDecoration(
+        color: Colors.grey.shade200,
+        borderRadius: BorderRadius.circular(15),
+      ),
+      child: TextField(
+        decoration: InputDecoration(
+          suffixIcon: GestureDetector(
+            onTap: () {},
+            child: const Icon(Icons.search),
+          ),
+          contentPadding: const EdgeInsets.symmetric(
+            vertical: 0,
+            horizontal: 10,
+          ),
+          hintText: "Search",
+          hintStyle: const TextStyle(fontSize: 12),
+          border: OutlineInputBorder(
+            borderSide: BorderSide.none,
+            borderRadius: BorderRadius.circular(15),
+          ),
+        ),
       ),
     );
   }
