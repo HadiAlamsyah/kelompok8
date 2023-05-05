@@ -4,11 +4,11 @@
 
 Praktikum Pemrograman Mobile Mebuat News Apps dan Lain-lain
 
-### Kelompok 1
+### Kelompok 8
 
 Anggota Kelompok :
 
-1. Saifurrohman
-2. Ayank Tio
-3. Muhammad Rifaldi
-4. Ramdan Rahmat Hidayat
+1. Hilman Syahril
+2. Hadi Nuralamsyah
+3. Rangga Hidayat
+4. Rizki Fauzi
