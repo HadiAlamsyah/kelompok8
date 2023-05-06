@@ -1,30 +1,40 @@
 class User {
   final int id;
   final String name;
-  final String userName;
+  final String username;
   final String email;
-  final String? profileImage;
+  final String? profilePhoto;
   final String? phoneNumber;
 
   User({
     required this.id,
     required this.name,
-    required this.userName,
+    required this.username,
     required this.email,
-    this.profileImage,
+    this.profilePhoto,
     this.phoneNumber,
   });
 
-  ///[* data profile]
+  factory User.fromMap(Map<String, dynamic> map) {
+    return User(
+      id: map["id"],
+      name: map["name"],
+      username: map["username"],
+      email: map["email"],
+      profilePhoto: map["profile_photo"],
+      phoneNumber: map["phone_number"],
+    );
+  }
+
   factory User.dummy() {
     return User(
-      id: 045,
-      name: "Hilman",
-      userName: "Kelompok8",
+      id: 001,
+      name: "KEL 8",
+      username: "kel 8",
       email: "syahrilhilman30@gmail.com",
-      profileImage:
-          "https://cdn.pixabay.com/photo/2023/01/21/15/16/ai-generated-7734340_960_720.jpg",
-      phoneNumber: "0895361327610",
+      profilePhoto:
+          "https://i.buddyku.id/ugc/2022/11/03/null/null-63632cadd40c2e9647415f50.jpeg",
+      phoneNumber: "tos ah",
     );
   }
 }

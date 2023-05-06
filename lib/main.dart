@@ -1,32 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import '/config/app_routes.dart';
+
+import 'package:pertemuan_v/configs/app_routes.dart';
 
 void main() {
-  SystemChrome.setSystemUIOverlayStyle(
-    const SystemUiOverlayStyle(
-      statusBarColor: Colors.transparent,
-      statusBarIconBrightness: Brightness.dark,
-    ),
-  );
-  runApp(const MainApp());
+  runApp(const MyApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        useMaterial3: true,
-        colorSchemeSeed: Colors.white,
-      ),
-      title: "Berita Pagi Apps",
-      routeInformationProvider: AppRoutes.goRouter.routeInformationProvider,
       routerDelegate: AppRoutes.goRouter.routerDelegate,
       routeInformationParser: AppRoutes.goRouter.routeInformationParser,
+      routeInformationProvider: AppRoutes.goRouter.routeInformationProvider,
     );
   }
 }
